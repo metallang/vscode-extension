@@ -1,0 +1,32 @@
+{
+  "name": "metallang",
+  "displayName": "Metal Language Support",
+  "description": "Support for the Metal Programming Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "metallang",
+      "aliases": ["Metal", "metallang"],
+      "extensions": [".mt"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "metallang",
+      "scopeName": "source.mt",
+      "path": "./syntaxes/metallang.tmLanguage.json"
+    }],
+    "themes": [
+      {
+        "label": "Metal Language Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/metal.json"
+      }
+    ]
+  }
+}
